@@ -11,7 +11,9 @@ $RECYCLE.BIN/
 
 *.log
 log.txt
-/src/enviroments
+
+/src/enviroments/enviroment.ts
+/src/enviroments/enviroment.prod.ts
 
 /.sourcemaps
 /.versions
