@@ -1,0 +1,82 @@
+<!-- src/app/pages/register/register.page.html -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-text-center">Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-align-items-center">
+  <ion-grid>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="12">
+        <ion-text class="ion-text-center">
+          <h1>Crea un usuario</h1>
+        </ion-text>
+      </ion-col>
+
+      <ion-col size-md="6" size-sm="12">
+        <form (ngSubmit)="onRegister()">
+          <ion-item>
+            <ion-input
+              label="Correo Electronico"
+              labelPlacement="floating"
+              placeholder="Correo Electronico"
+              type="email"
+              [(ngModel)]="email"
+              name="email"
+              color="warning"
+              required
+            ></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-input
+              label="Contraseña"
+              labelPlacement="floating"
+              placeholder="Contraseña"
+              type="password"
+              [(ngModel)]="password"
+              name="password"
+              required
+              color="warning"
+            ></ion-input>
+          </ion-item>
+
+          <ion-button
+            expand="full"
+            type="submit"
+            [disabled]="!email || !password"
+            color="warning"
+          >
+            Register
+          </ion-button>
+        </form>
+
+        <ion-item lines="none">
+          <ion-label>¿Cuentas con una cuenta?</ion-label>
+          <ion-button fill="clear" routerLink="/login" color="warning"
+            >Inicia sesión</ion-button
+          >
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-justify-content-center ion-align-items-center">
+      <ion-col size="12">
+        <ion-text class="ion-text-center" color="medium">
+          <h4>
+            Cuando Chuck Norris estuvo expuesto al coronavirus, el virus fue
+            puesto en cuarentena.
+          </h4>
+        </ion-text>
+      </ion-col>
+
+      <ion-col size="12" class="image-container">
+        <ion-img
+          src="https://static.wixstatic.com/media/2a5727_f6f8b1e10f694566813b1174a3a0a625.png/v1/fill/w_295,h_420,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2a5727_f6f8b1e10f694566813b1174a3a0a625.png"
+        >
+        </ion-img>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

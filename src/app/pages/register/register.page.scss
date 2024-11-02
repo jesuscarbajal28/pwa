@@ -1,0 +1,18 @@
+ion-img {
+  width: 10rem;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centered-image {
+  max-width: 100%;
+  height: auto;
+}
+
+ion-title {
+  font-weight: bolder;
+}

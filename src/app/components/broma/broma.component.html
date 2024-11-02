@@ -1,0 +1,16 @@
+<ion-card>
+  <ion-card-content>
+    <ion-col class="image-container">
+      <ion-img [src]="url"></ion-img>
+    </ion-col>
+
+    <h1 class="ion-text-center">{{ bromita }}</h1>
+
+    <ion-button expand="full" (click)="loadBromita()" color="warning"
+      >Cargar otro chiste</ion-button
+    >
+    <ion-button expand="full" (click)="shareOnFacebook()" color="warning"
+      >Compartir en Facebook</ion-button
+    >
+  </ion-card-content>
+</ion-card>
